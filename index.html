@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffe7f0">
+
+  <!-- Primary SEO -->
+  <title>Will You Be Mine? 🐾 — Cute Cat Proposal | mrchandrayee</title>
+  <meta name="description" content="A cute cat asking 'Will you be mine?' with a kitten photo, YES/NO interaction, dodging button, and heart burst animation. Pure HTML, CSS & JavaScript.">
+  <meta name="keywords" content="will you be mine, cat proposal, interactive love, CSS animation, JavaScript, cute cat, web design, mrchandrayee, valentine">
+  <meta name="author" content="mrchandrayee">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mrchandrayee.github.io/will-you-be-mine/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mrchandrayee.github.io/will-you-be-mine/">
+  <meta property="og:title" content="Will You Be Mine? 🐾 — Cute Cat Proposal | mrchandrayee">
+  <meta property="og:description" content="A cute cat asking 'Will you be mine?' with kitten photo, YES/NO buttons, dodging NO, and heart burst celebration!">
+  <meta property="og:image" content="https://mrchandrayee.github.io/will-you-be-mine/preview.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://mrchandrayee.github.io/will-you-be-mine/">
+  <meta name="twitter:title" content="Will You Be Mine? 🐾 — Cute Cat Proposal | mrchandrayee">
+  <meta name="twitter:description" content="A very serious kitten asks 'Will you be mine?' — NO button dodges, YES triggers heart burst!">
+  <meta name="twitter:image" content="https://mrchandrayee.github.io/will-you-be-mine/preview.png">
+  <meta name="twitter:creator" content="@mrchandrayee">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Will You Be Mine? — Cute Cat Proposal",
+    "description": "A cute cat asking 'Will you be mine?' with a kitten photo, YES/NO interaction, dodging button, and heart burst animation. Pure HTML, CSS & JavaScript.",
+    "url": "https://mrchandrayee.github.io/will-you-be-mine/",
+    "author": { "@type": "Person", "name": "mrchandrayee", "url": "https://github.com/mrchandrayee" },
+    "applicationCategory": "WebApplication",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="browser">
+    <div class="browserbar"><span class="lights"><i></i><i></i><i></i></span><strong>Will you be mine? — <b>HTML · CSS · JS</b></strong><small>localhost / love</small></div>
+    <main class="page">
+      <button class="sound" id="soundBtn" aria-label="Toggle sound">🔈</button>
+      <section class="card" id="card">
+        <div class="photo-wrap">
+          <img id="catPhoto" src="assets/cat-ask.jpg" alt="A cute kitten looking at the camera">
+          <div class="photo-prompt" id="photoPrompt" aria-live="polite"></div>
+        </div>
+        <div class="question" id="question">
+          <h1>Will you be mine? <span>🐾</span></h1>
+          <p>asked by a very small, very serious cat</p>
+          <div class="buttons" id="buttons">
+            <button class="yes-btn" id="yesBtn">Yes <span>💕</span></button>
+            <button class="no-btn" id="noBtn">No</button>
+          </div>
+        </div>
+        <div class="success hidden" id="success">
+          <h1>I knew it! You're<br>mine now <span>😻</span></h1>
+          <p>purr-fect decision.</p>
+          <button id="againBtn" class="again">ask me again ↻</button>
+        </div>
+      </section>
+      <div class="hearts" id="hearts" aria-hidden="true"></div>
+      <div class="code-panels">
+        <section class="code html"><header>Html</header><pre><code>&lt;!-- the question --&gt;
+&lt;section class="card"&gt;
+  &lt;video src="cat-ask.mp4"
+    autoplay loop muted&gt;&lt;/video&gt;
+  &lt;h1&gt;Will you be mine?&lt;/h1&gt;
+  &lt;div class="btn-group"&gt;
+    &lt;button id="yes-btn"&gt;
+      Yes 💕&lt;/button&gt;
+    &lt;button id="no-btn"&gt;
+      No&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre></section>
+        <section class="code css"><header>CSS</header><pre><code>/* No dodges, Yes scales */
+#no-btn {
+  transform:
+    translate(var(--x), var(--y));
+  transition: transform .28s,
+    scale .28s;
+}
+#no-btn:hover {
+  transform: translate(
+    var(--x), var(--y));
+}
+.btn-yes:hover {
+  scale: var(--zoom);
+}</code></pre></section>
+        <section class="code js"><header>JS</header><pre><code>// No is impossible
+function taunt() {
+  escalate(); // new plea
+  dodge();    // flee, on-screen
+}
+noBtn.onpointerenter = taunt;
+
+yesBtn.onclick = () => {
+  swapToHappyCat();
+  burstHearts(); // 💕 💕
+};</code></pre></section>
+      </div>
+      <div class="credit">MADE WITH A LITTLE LOVE & A VERY PERSISTENT CAT</div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
