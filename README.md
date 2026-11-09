@@ -70,6 +70,12 @@ yesBtn.onclick = () => {
 
 ---
 
+## 🏷️ Topics
+
+`cat-proposal` `cute` `css-animation` `javascript` `html-css-js` `frontend` `interactive` `valentine`
+
+---
+
 ## 👨‍💻 Author
 
 **mrchandrayee** · [GitHub](https://github.com/mrchandrayee) · [Profile](https://github.com/mrchandrayee/mrchandrayee)
